@@ -61,7 +61,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background: rgba(0, 0, 0, 0.8);
     position: sticky;
     top: 0;
@@ -113,6 +113,16 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     }
+
+    .timeline-item ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+    
+    .timeline-item li {
+        margin-bottom: 10px;
+    }
     
     .project-grid {
     display: grid;
@@ -150,10 +160,12 @@ body {
     } */
 
     .project-item {
+        background-color: #0d0d0d; /* Matches body background */
         position: relative;
         height: 250px;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
+        background-repeat: no-repeat; /* Prevent tiling */
         border-radius: 10px;
         overflow: hidden;
         text-decoration: none;
@@ -350,6 +362,7 @@ body {
 
     .project-container .slideshow {
         grid-column: 1 / -1; /* Span across both columns */
+        background-color: #0d0d0d; /* Matches body background */
     }
     
     .project-container .slideshow-controls {
@@ -541,4 +554,433 @@ body {
         height: auto; /* Maintains aspect ratio */
         border: 1px solid #ccc; /* Adds a border */
         border-radius: 8px; /* Rounds the corners */
+    }
+
+    /* Experience Section Styles */
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .experience-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experience-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 255, 204, 0.3);
+    }
+
+    .experience-header {
+        border-bottom: 1px solid #00ffcc;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .experience-header h3 {
+        margin: 0;
+        font-size: 24px;
+        color: #00ffcc;
+        text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .experience-header .company {
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        opacity: 0.9;
+        margin: 5px 0;
+    }
+
+    .experience-header .duration {
+        display: block;
+        font-size: 14px;
+        color: #00ccff;
+        opacity: 0.8;
+    }
+
+    .experience-details {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: justify; /* Justify the text left and right */
+    }
+
+    .experience-details li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+    }
+
+    .experience-details li:before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #00ffcc;
+        font-size: 14px;
+    }
+
+    /* Reuse existing animation for consistency */
+    .animate {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .animate.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Education Section Styles */
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .education-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .education-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 255, 204, 0.3);
+    }
+
+    .education-header {
+        border-bottom: 1px solid #00ffcc;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .education-header h3 {
+        margin: 0;
+        font-size: 24px;
+        color: #00ffcc;
+        text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .education-header .institution {
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        opacity: 0.9;
+        margin: 5px 0;
+    }
+
+    .education-header .duration {
+        display: block;
+        font-size: 14px;
+        color: #00ccff;
+        opacity: 0.8;
+    }
+
+    .education-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .courses-column {
+        flex: 1; /* Takes up half the space */
+        color: #fff;
+    }
+
+    .courses-column p {
+        margin: 0 0 10px 0;
+    }
+
+    .education-courses {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .education-courses li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .education-courses li:before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #00ffcc;
+        font-size: 14px;
+    }
+
+    .details-column {
+        flex: 1; /* Takes up half the space */
+        color: #fff;
+    }
+
+    .details-column p {
+        margin: 0 0 10px 0;
+    }
+
+    /* Reuse existing animation */
+    .animate {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .animate.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .education-details {
+        color: #fff;
+        text-align: center; /* Center CGPA by default */
+    }
+    
+    .education-details .cgpa {
+        margin: 5px 0 15px 0; /* Add spacing below CGPA */
+    }
+    
+    .education-details .courses {
+        text-align: left; /* Left-align courses section */
+    }
+    
+    .education-details .courses-label {
+        margin: 0 0 5px 0; /* Spacing below "Relevant Courses" */
+    }
+    
+    .education-details ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .education-details li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .education-details li:before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #00ffcc;
+        font-size: 14px;
+    }
+
+    /* Skills Section Styles */
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .skills-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skills-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 255, 204, 0.3);
+    }
+
+    .skills-card h3 {
+        margin: 0 0 15px 0;
+        font-size: 24px;
+        color: #00ffcc;
+        text-shadow: 0 0 5px #00ffcc;
+        border-bottom: 1px solid #00ffcc;
+        padding-bottom: 10px;
+    }
+
+    .skills-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .skills-list .rating {
+        font-size: 14px;
+        color: #00ffcc;
+    }
+
+    /* Achievements Section Styles */
+    .achievements-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .achievement-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .achievement-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 255, 204, 0.3);
+    }
+
+    .achievement-card h3 {
+        margin: 0;
+        font-size: 24px;
+        color: #00ffcc;
+        text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .achievement-card .duration {
+        display: block;
+        font-size: 14px;
+        color: #00ccff;
+        opacity: 0.8;
+        margin: 5px 0;
+    }
+
+    .achievement-card p {
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 0 0 0;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.8;
+        position: relative;
+        z-index: 1; /* Ensure it’s above particles.js */
+    }
+
+    /* Contact Section Styles */
+    .contact-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .contact-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        max-width: 600px; /* Limit width for readability */
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 255, 204, 0.3);
+    }
+
+    .contact-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left; /* Ensure text aligns left */
+    }
+
+    .contact-list li {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .contact-list i {
+        color: #00ffcc;
+        font-size: 20px;
+        margin-right: 15px;
+        width: 20px; /* Consistent icon width */
+        text-align: center;
+    }
+
+    .contact-label {
+        font-weight: 600;
+        color: #00ffcc;
+        margin-right: 10px;
+        min-width: 80px; /* Align labels */
+    }
+
+    .contact-value {
+        flex: 1;
+    }
+
+    .contact-value a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .contact-value a:hover {
+        color: #00ffcc;
+    }
+
+    /* Under Development Section */
+    .under-development {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        z-index: 1; /* Above particles.js */
+    }
+
+    .under-development h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .under-development p {
+        font-size: 18px;
+        opacity: 0.8;
     }

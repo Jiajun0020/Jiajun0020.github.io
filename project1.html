@@ -22,7 +22,7 @@
             <li><a href="home.html#projects">Projects</a></li>
             <li><a href="home.html#skills">Skills</a></li>
             <li><a href="home.html#achievements">Achievements</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home.html#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -32,10 +32,13 @@
 
         <!-- Slideshow -->
         <div class="slideshow">
-            <div class="slide"><img src="projects/project1/1.jpg" alt="Image 1"></div>
-            <div class="slide"><img src="projects/project1/2.jpg" alt="Image 2"></div>
-            <div class="slide"><img src="projects/project1/3.jpg" alt="Image 3"></div>
-            <div class="slide"><img src="projects/project1/4.jpg" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project1/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project1/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project1/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project1/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project1/slideshow/5.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project1/slideshow/6.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project1/slideshow/7.png" alt="Image 4"></div>
         </div>
         <div class="slideshow-controls">
             <button id="prev">Previous</button>
@@ -75,35 +78,35 @@
                 <h3>Image Formation Model</h3>
                 <p>Image formation model is designed by using CNNs to fit multiple components in the revised image formation model.</p>
                 <div class="image-container">
-                    <img src="projects/project1/IF.png" alt="Diagram of Image Formation Model" class="responsive-image">
+                    <img src="assets/projects/project1/IF.png" alt="Diagram of Image Formation Model" class="responsive-image">
                 </div>
 
                 <!-- White Balance Model -->
                 <h3>White Balance Model</h3>
                 <p>White Balance Model is also designed using CNNs in a U-Net architecture with multi-scale skip connections between encoder and decoders. As shown in Figure 5, the framework consists of two main units: first is a 4-level encoder that is responsible for extracting a multi-scale latent representation of input image; second part includes 4-level decoders. Each part has a different bottleneck and transposed convolutional layers.</p>
                 <div class="image-container">
-                    <img src="projects/project1/WB.png" alt="Diagram of White Balance Model" class="responsive-image">
+                    <img src="assets/projects/project1/WB.png" alt="Diagram of White Balance Model" class="responsive-image">
                 </div>
 
                 <!-- System Architecture -->
                 <h3>System Architecture</h3>
                 <p>The system architecture design can be split into two phases : training and testing and three sections which are the input, process, and output.</p>
                 <div class="image-container">
-                    <img src="projects/project1/System Architecture.png" alt="Diagram of White Balance Model" class="responsive-image">
+                    <img src="assets/projects/project1/System Architecture.png" alt="Diagram of White Balance Model" class="responsive-image">
                 </div>
             </section>
 
             <!-- Results -->
-            <section id="results" class="animate">
+            <!-- <section id="results" class="animate">
                 <h2 class="glitch" data-text="Results">Results</h2>
                 <p>[Add your results content here later]</p>
-            </section>
+            </section> -->
 
             <!-- Conclusion -->
-            <section id="conclusion" class="animate">
+            <!-- <section id="conclusion" class="animate">
                 <h2 class="glitch" data-text="Conclusion">Conclusion</h2>
                 <p>[Add your conclusion content here later]</p>
-            </section>
+            </section> -->
         </div>
 
         <!-- Project Information Sidebar -->
@@ -111,22 +114,30 @@
             <h3>Project Information</h3>
             <h4>Category</h4>
             <div class="tags">
-                <span class="tag">AL/ML</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">CNN</span>
                 <span class="tag">Computer Vision</span>
             </div>
             <h4>Programming Language</h4>
             <div class="tags">
                 <span class="tag">Python</span>
             </div>
-            <p><strong>Type of Project:</strong> Final Year Project</p>
-            <p><strong>Project Date:</strong> 2023</p>
+            <h4>Type of Project</h4>
+            <p>Final Year Project</p>
+            <h4>Project Date</h4>
+            <p>2023/2024</p>
             <div class="downloads">
-                <a href="projects/project1/thesis.pdf" download>Download Thesis</a>
-                <a href="projects/project1/poster.pdf" download>Download Poster</a>
-                <a href="projects/project1/slide.pptx" download>Download Slide</a>
+                <a href="assets/projects/project1/download/Thesis.pdf" download target="_blank">Download Thesis</a>
+                <a href="assets/projects/project1/download/Poster.pdf" download target="_blank">Download Poster</a>
+                <a href="assets/projects/project1/download/Slide.pptx" download target="_blank">Download Slide</a>
+                <a href="assets/projects/project1/download/Scientific Paper.pdf" download target="_blank">Download Scientific Paper</a>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>© Copyright Yap Jia Jun. All Rights Reserved</p>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

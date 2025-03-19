@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - Home</title>
+    <title>Home Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="home-page">
     <!-- Particles Background Container -->
@@ -22,7 +23,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#achievements">Achievements</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -39,14 +40,46 @@
         <!-- Work Experience Section -->
         <section id="experience" class="full-page-section">
             <h2 class="glitch" data-text="Work Experience">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Job Title @ Company</h3>
-                    <p>2023 - Present | Used Python to [describe work].</p>
+            <div class="experience-container">
+                <!-- Associate Research Engineer -->
+                <div class="experience-card animate">
+                    <div class="experience-header">
+                        <h3>Associate Research Engineer</h3>
+                        <span class="company">FootfallCam (Meta Research Sdn Bhd)</span>
+                        <span class="duration">Aug 2024 - Present</span>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed and deployed a Face Demographics Recognition Model using Convolutional Neural Networks (CNNs), optimizing for accuracy and real-time performance.</li>
+                        <li>Researched and tested stereo imaging techniques to generate high-quality depth maps for enhanced AI perception.</li>
+                        <li>Automated end-to-end AI model workflows, including data collection, preprocessing, annotation, training, testing, and performance analysis.</li>
+                        <li>Engineered a people-counting feature using 2D person detection and tracking models, extending functionality to stereo images.</li>
+                        <li>Implemented object detection and overhead obstruction logic to improve people-counting accuracy in live video feeds.</li>
+                        <li>Contributed to a centroid inference pipeline, integrating multi-source video processing, using AI models for person detection and tracking, backend analytics, and data export to servers.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <h3>Previous Job @ Company</h3>
-                    <p>2021 - 2023 | [Describe responsibilities].</p>
+                <!-- Internship -->
+                <div class="experience-card animate">
+                    <div class="experience-header">
+                        <h3>Computer Science / IT Intern</h3>
+                        <span class="company">FootfallCam (Meta Research Sdn Bhd)</span>
+                        <span class="duration">Mar 2024 - Jul 2024</span>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Optimized people counter accuracy through tuning and quality control, enhancing system performance.</li>
+                        <li>Performed data annotation to support AI model training, ensuring high-quality datasets.</li>
+                        <li>Conducted data gathering, preprocessing, visualization, and statistical analysis to drive insights and model development.</li>
+                    </ul>
+                </div>
+                <!-- Business Support Administrator -->
+                <div class="experience-card animate">
+                    <div class="experience-header">
+                        <h3>Business Support Administrator</h3>
+                        <span class="company">AXA Affin General Insurance Berhad Melaka</span>
+                        <span class="duration">Jan 2018 - May 2018</span>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Managed administrative tasks to support business operations.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -54,10 +87,49 @@
         <!-- Education Section -->
         <section id="education" class="full-page-section">
             <h2 class="glitch" data-text="Education">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Degree @ University</h3>
-                    <p>2019 - 2023 | Studied [your field].</p>
+            <div class="education-container">
+                <!-- BSc (Hons.) in Mathematics with Computer Graphics -->
+                <div class="education-card animate">
+                    <div class="education-header">
+                        <h3>BSc (Hons.) in Mathematics with Computer Graphics</h3>
+                        <span class="institution">University Malaysia Sabah</span>
+                        <span class="duration">Oct 2020 - Oct 2024</span>
+                    </div>
+                    <div class="education-details">
+                        <p class="cgpa"><strong>CGPA:</strong> 3.84</p>
+                        <div class="courses">
+                            <p class="courses-label"><strong>Relevant Courses:</strong></p>
+                            <ul>
+                                <li>Digital Image Processing</li>
+                                <li>Real-Time Graphics</li>
+                                <li>Scientific Data Visualization</li>
+                                <li>Computer Interface Programming</li>
+                                <li>Cryptography</li>
+                                <li>Mathematical Programming</li>
+                                <li>Fuzzy Mathematics</li>
+                                <li>Geometric Modelling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Malaysian Higher School Certificate STPM -->
+                <div class="education-card animate">
+                    <div class="education-header">
+                        <h3>Malaysian Higher School Certificate STPM</h3>
+                        <span class="institution">Malacca High School</span>
+                        <span class="duration">May 2018 - Dec 2019</span>
+                    </div>
+                    <div class="education-details">
+                        <p class="cgpa"><strong>CGPA:</strong> 2.67</p>
+                        <div class="courses">
+                            <p class="courses-label"><strong>Relevant Courses:</strong></p>
+                            <ul>
+                                <li>Mathematics (T)</li>
+                                <li>Physics</li>
+                                <li>Chemistry</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,33 +142,33 @@
                     <h3>Underwater Image Enhancement by using Deep Learning</h3>
                     <div class="description">Reveal</div>
                 </a>
-                <a href="project2.html" class="project-item" style="background-image: url('assets/hh.jpg');">
-                    <h3>Project 2</h3>
-                    <div class="description">Web app with JavaScript</div>
+                <a href="project2.html" class="project-item" style="background-image: url('assets/project2.png');">
+                    <h3>3D Desktop Game (The Crusader)</h3>
+                    <div class="description">Reveal</div>
                 </a>
-                <a href="project3.html" class="project-item" style="background-image: url('assets/profile.jpg');">
-                    <h3>Project 3</h3>
-                    <div class="description">Graphics experiment</div>
+                <a href="project3.html" class="project-item" style="background-image: url('assets/project3a.png');">
+                    <h3>Whale-Watching Application Interface Design (Prototype)</h3>
+                    <div class="description">Reveal</div>
                 </a>
-                <a href="project4.html" class="project-item" style="background-image: url('assets/profile.jpg');">
-                    <h3>Project 4</h3>
-                    <div class="description">Math visualization</div>
+                <a href="project4.html" class="project-item" style="background-image: url('assets/project4.png');">
+                    <h3>Advanced Image Enhancement Software</h3>
+                    <div class="description">Reveal</div>
                 </a>
-                <a href="project5.html" class="project-item" style="background-image: url('assets/profile.jpg');">
-                    <h3>Project 5</h3>
-                    <div class="description">AI simulation</div>
+                <a href="project5.html" class="project-item" style="background-image: url('assets/project5.png');">
+                    <h3>Advanced Painting Software</h3>
+                    <div class="description">Reveal</div>
                 </a>
-                <a href="project6.html" class="project-item" style="background-image: url('assets/profile.jpg');">
-                    <h3>Project 6</h3>
-                    <div class="description">Portfolio website</div>
+                <a href="project6.html" class="project-item" style="background-image: url('assets/project6.png');">
+                    <h3>3D Object Visualizer</h3>
+                    <div class="description">Reveal</div>
                 </a>
-                <a href="project6.html" class="project-item" style="background-image: url('assets/profile.jpg');">
-                    <h3>Project 7</h3>
-                    <div class="description">Portfolio website</div>
+                <a href="project7.html" class="project-item" style="background-image: url('assets/project7.png');">
+                    <h3>DICOM: Medical Data Visualizer</h3>
+                    <div class="description">Reveal</div>
                 </a>
-                <a href="project6.html" class="project-item" style="background-image: url('assets/profile.jpg');">
-                    <h3>Project 8</h3>
-                    <div class="description">Portfolio website</div>
+                <a href="project8.html" class="project-item" style="background-image: url('assets/project8.png');">
+                    <h3>ParaView: The Advanced Visualizer</h3>
+                    <div class="description">Reveal</div>
                 </a>
             </div>
         </section>
@@ -104,24 +176,106 @@
         <!-- Skills Section -->
         <section id="skills" class="full-page-section">
             <h2 class="glitch" data-text="Skills">Skills</h2>
-            <ul class="skills-list">
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>HTML/CSS</li>
-                <li>[Add more skills]</li>
-            </ul>
+            <div class="skills-container">
+                <!-- Language -->
+                <div class="skills-card animate">
+                    <h3>Language</h3>
+                    <ul class="skills-list">
+                        <li>English <span class="rating">★★★★☆</span></li>
+                        <li>Mandarin <span class="rating">★★★★★</span></li>
+                        <li>Malay <span class="rating">★★★★☆</span></li>
+                    </ul>
+                </div>
+                <!-- Programming Language -->
+                <div class="skills-card animate">
+                    <h3>Programming Language</h3>
+                    <ul class="skills-list">
+                        <li>Python <span class="rating">★★★★☆</span></li>
+                        <li>SQL <span class="rating">★★★★☆</span></li>
+                        <li>Apps Scripts <span class="rating">★★★☆☆</span></li>
+                        <li>C++ <span class="rating">★★☆☆☆</span></li>
+                        <li>HTML <span class="rating">★★★☆☆</span></li>
+                        <li>JavaScript <span class="rating">★★★☆☆</span></li>
+                        <li>CSS <span class="rating">★★★☆☆</span></li>
+                    </ul>
+                </div>
+                <!-- General AI/ML Skill & Frameworks -->
+                <div class="skills-card animate">
+                    <h3>General AI/ML Skill & Frameworks</h3>
+                    <ul class="skills-list">
+                        <li>PyTorch <span class="rating">★★★★☆</span></li>
+                        <li>OpenCV <span class="rating">★★★★☆</span></li>
+                        <li>TensorFlow <span class="rating">★★★☆☆</span></li>
+                        <li>Deep Learning <span class="rating">★★★★☆</span></li>
+                        <li>Computer Vision <span class="rating">★★★★☆</span></li>
+                        <li>Data Preprocessing <span class="rating">★★★★★</span></li>
+                        <li>Data Annotation <span class="rating">★★★★★</span></li>
+                        <li>Model Deployment <span class="rating">★★★★☆</span></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Achievements Section -->
         <section id="achievements" class="full-page-section">
-            <h2v class="glitch" data-text="Achievements">Achievements</h2>
-            <ul class="achievements-list">
-                <li>[e.g., Won Hackathon 2022]</li>
-                <li>[e.g., Published AI Research Paper]</li>
-                <li>[Add more achievements]</li>
-            </ul>
+            <h2 class="glitch" data-text="Achievements">Achievements</h2>
+            <div class="achievements-container">
+                <!-- First Class Award -->
+                <div class="achievement-card animate">
+                    <h3>First Class Award</h3>
+                    <span class="duration">2020 - 2024</span>
+                    <p>Obtained CGPA 3.67 and above in my BSc (Hons) studies.</p>
+                </div>
+                <!-- Top 10% Award -->
+                <div class="achievement-card animate">
+                    <h3>Top 10% Award</h3>
+                    <span class="duration">Mar 2024 - Jul 2024</span>
+                    <p>Awarded for high distinction in internship program.</p>
+                </div>
+                <!-- Silver Medal Award -->
+                <div class="achievement-card animate">
+                    <h3>Silver Medal Award | Certificate</h3>
+                    <span class="duration">19 - 21 Apr 2019</span>
+                    <p>International Festival of Innovation on Green Technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="full-page-section">
+            <h2 class="glitch" data-text="Contact">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-card animate">
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <!-- <span class="contact-label">Phone:</span> -->
+                            <span class="contact-value">(+60)11-1083 9828</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <!-- <span class="contact-label">Address:</span> -->
+                            <span class="contact-value">Sungai Long, Kajang, Selangor, Malaysia</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <!-- <span class="contact-label">Email:</span> -->
+                            <span class="contact-value"><a href="mailto:[kelvanyjj241020@gmail.com]">[your.email@example.com]</a></span>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <!-- <span class="contact-label">LinkedIn:</span> -->
+                            <span class="contact-value"><a href="https://www.linkedin.com/in/yapjiajun00" target="_blank">[linkedin.com/in/your-profile]</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>© Copyright Yap Jia Jun. All Rights Reserved</p>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

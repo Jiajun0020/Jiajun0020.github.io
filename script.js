@@ -2,6 +2,10 @@
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
+    const footer = document.querySelector('.footer');
+    if (footer) {
+        footer.innerHTML = '<p>© Copyright Yap Jia Jun. All Rights Reserved</p>';
+    }
     // Intro Page Typing Animation
     if (document.getElementById('name')) {
         const nameEl = document.getElementById('name');
@@ -80,6 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top < window.innerHeight * 0.8 && rect.bottom > 0) {
                     section.classList.add('visible');
+                    
+                    // Animate project items in the Projects section
                     if (section.id === 'projects') {
                         const projectItems = section.querySelectorAll('.project-item');
                         projectItems.forEach((item, index) => {
@@ -88,14 +94,85 @@ document.addEventListener('DOMContentLoaded', () => {
                             }, index * 150);
                         });
                     }
+                    
+                    // Animate experience cards in the Experience section
+                    if (section.id === 'experience') {
+                        const experienceCards = section.querySelectorAll('.experience-card');
+                        experienceCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('visible');
+                            }, index * 150);
+                        });
+                    }
+                    
+                    // Animate education cards in the Education section
+                    if (section.id === 'education') {
+                        const educationCards = section.querySelectorAll('.education-card');
+                        educationCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('visible');
+                            }, index * 150);
+                        });
+                    }
+                    
+                    // Animate skills cards in the Skills section
+                    if (section.id === 'skills') {
+                        const skillsCards = section.querySelectorAll('.skills-card');
+                        skillsCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('visible');
+                            }, index * 150);
+                        });
+                    }
+                    
+                    // Animate achievement cards in the Achievements section
+                    if (section.id === 'achievements') {
+                        const achievementCards = section.querySelectorAll('.achievement-card');
+                        achievementCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('visible');
+                            }, index * 150);
+                        });
+                    }
+                    
+                    // Animate contact card in the Contact section
+                    if (section.id === 'contact') {
+                        const contactCards = section.querySelectorAll('.contact-card');
+                        contactCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('visible');
+                            }, index * 150);
+                        });
+                    }
                 }
             });
         }
 
+        // scrollContainer.addEventListener('scroll', checkVisibility);
+        // window.addEventListener('load', checkVisibility);
+        // window.addEventListener('load', () => {
+        //     scrollContainer.scrollTo(0, 0);
+        // });
+        // Handle initial scroll based on URL hash
+        function scrollToHash() {
+            const hash = window.location.hash; // e.g., "#projects"
+            if (hash) {
+                const targetSection = document.querySelector(hash);
+                if (targetSection && scrollContainer) {
+                    const sectionTop = targetSection.getBoundingClientRect().top + scrollContainer.scrollTop;
+                    scrollContainer.scrollTo({
+                        top: sectionTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+
         scrollContainer.addEventListener('scroll', checkVisibility);
-        window.addEventListener('load', checkVisibility);
         window.addEventListener('load', () => {
-            scrollContainer.scrollTo(0, 0);
+            checkVisibility(); // Initial visibility check
+            scrollToHash();    // Scroll to hash if present
+            // Removed scrollTo(0, 0) to avoid overriding hash
         });
     }
 
