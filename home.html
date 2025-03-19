@@ -1,0 +1,130 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+    <!-- Particles Background Container -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content with Scroll Snap -->
+    <main class="scroll-container">
+        <!-- About Me Section -->
+        <section id="about" class="full-page-section">
+            <h2 class="glitch" data-text="About Me">About Me</h2>
+            <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic">
+            <h3> Hi! My name is Yap Jia Jun</h3>
+            <p>I'm a self-motivated undergraduate with a deep passion for mathematics, coding, and computer graphics. I find fulfillment in solving complex mathematical problems and building software. I'm dedicated to continuous self-improvement, working to excel in both math and programming. As an active sports enthusiast, I embrace challenges and teamwork on and off the field. I'm eager to apply my academic knowledge to real-world challenges during an internship and collaborate with like-minded professionals.</p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="full-page-section">
+            <h2 class="glitch" data-text="Work Experience">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Job Title @ Company</h3>
+                    <p>2023 - Present | Used Python to [describe work].</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Previous Job @ Company</h3>
+                    <p>2021 - 2023 | [Describe responsibilities].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="full-page-section">
+            <h2 class="glitch" data-text="Education">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Degree @ University</h3>
+                    <p>2019 - 2023 | Studied [your field].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="full-page-section">
+            <h2 class="glitch" data-text="Projects">Projects</h2>
+            <div class="project-grid">
+                <a href="project1.html" class="project-item" style="background-image: url('assets/project1.png');">
+                    <h3>Underwater Image Enhancement by using Deep Learning</h3>
+                    <div class="description">Reveal</div>
+                </a>
+                <a href="project2.html" class="project-item" style="background-image: url('assets/hh.jpg');">
+                    <h3>Project 2</h3>
+                    <div class="description">Web app with JavaScript</div>
+                </a>
+                <a href="project3.html" class="project-item" style="background-image: url('assets/profile.jpg');">
+                    <h3>Project 3</h3>
+                    <div class="description">Graphics experiment</div>
+                </a>
+                <a href="project4.html" class="project-item" style="background-image: url('assets/profile.jpg');">
+                    <h3>Project 4</h3>
+                    <div class="description">Math visualization</div>
+                </a>
+                <a href="project5.html" class="project-item" style="background-image: url('assets/profile.jpg');">
+                    <h3>Project 5</h3>
+                    <div class="description">AI simulation</div>
+                </a>
+                <a href="project6.html" class="project-item" style="background-image: url('assets/profile.jpg');">
+                    <h3>Project 6</h3>
+                    <div class="description">Portfolio website</div>
+                </a>
+                <a href="project6.html" class="project-item" style="background-image: url('assets/profile.jpg');">
+                    <h3>Project 7</h3>
+                    <div class="description">Portfolio website</div>
+                </a>
+                <a href="project6.html" class="project-item" style="background-image: url('assets/profile.jpg');">
+                    <h3>Project 8</h3>
+                    <div class="description">Portfolio website</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="full-page-section">
+            <h2 class="glitch" data-text="Skills">Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>[Add more skills]</li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="full-page-section">
+            <h2v class="glitch" data-text="Achievements">Achievements</h2>
+            <ul class="achievements-list">
+                <li>[e.g., Won Hackathon 2022]</li>
+                <li>[e.g., Published AI Research Paper]</li>
+                <li>[Add more achievements]</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
