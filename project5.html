@@ -1,9 +1,10 @@
+<!-- project5.html: Advanced Painting Software -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Painting Software - Under Development</title>
+    <title>Advanced Painting Software</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,10 +26,92 @@
         </ul>
     </nav>
 
-    <!-- Under Development Message -->
-    <div class="under-development">
-        <h1 class="glitch" data-text="Under Development">Under Development</h1>
-        <p>This project is currently being worked on. Check back later for updates!</p>
+    <!-- Project Container -->
+    <div class="project-container">
+        <h1 class="glitch" data-text="Advanced Painting Software">Advanced Painting Software</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide"><img src="assets/projects/project5/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/5.png" alt="Image 5"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/6.png" alt="Image 6"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/7.png" alt="Image 7"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/8.png" alt="Image 8"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/9.png" alt="Image 9"></div>
+            <div class="slide"><img src="assets/projects/project5/slideshow/10.png" alt="Image 10"></div>
+        </div>
+        <div class="slideshow-controls">
+            <button id="prev">Previous</button>
+            <div class="indicators"></div>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction -->
+            <section id="introduction" class="animate">
+                <h2 class="glitch" data-text="Introduction">Introduction</h2>
+                <p>TThis project presents an advanced 2D interactive image editor designed to offer a robust set of features for image manipulation and enhancement. The editor enables users to split and combine multiple images, compute histogram equalization for both grayscale and RGB channels, and apply a variety of filters to improve image quality. Additional capabilities include bit-plane slicing, multiple edge detection techniques, and image contouring processes. Users can manually fine-tune image filters to suit their preferences and compare edited images with the original, with an option to toggle this comparison on or off. To further assist users in understanding the effects of different filters, the editor includes a comparison function that highlights distinctions between filter types, ensuring a clear and intuitive editing experience.</p>
+            </section>
+
+            <!-- Flow Diagram -->
+            <section id="flowdiagram" class="animate">
+                <h2 class="glitch" data-text="Flow Diagram">Flow Diagram</h2>
+                <div class="image-container">
+                    <img src="assets/projects/project5/Flow Diagram.png" alt="Flow Diagram" class="responsive-image">
+                </div>
+            </section>
+
+            <!-- Functions -->
+            <section id="functions" class="animate">
+                <h2 class="glitch" data-text="Functions">Functions</h2>
+                <ol>
+                    <li>Basic Painting.</li>
+                    <li>Transformation and Cropping.</li>
+                    <li>Drawing Shapes and Input Text</li>
+                    <li>Apply Auto & Manual Filters and Compare</li>
+                    <li>Histogram Equalization</li>
+                    <li>Bit-Plane Slicing</li>
+                    <li>Edge Detection</li>
+                    <li>Image Contouring</li>
+                    <li>Split & Combine Image</li>
+                    <li>Save Images</li>
+                </ol>
+            </section>
+
+            <!-- Strength & Uniqueness -->
+            <section id="strength-uniqueness" class="animate">
+                <h2 class="glitch" data-text="Strength & Uniqueness">Strength & Uniqueness</h2>
+                <p>In order to build a user-friendly interface, I added more menu for user can use the function in my editor based on each category. For example, when user just want to do drawing and painting, user can choose paint from menu home and the functions of paint will be displayed. But when user want to do filtering image, a different function menu will be replaced the previous menu. This ensure that user will not get confuse with all the functions in my editor.</p>
+                <p>Next, an overall comparison among all the filtered and edited image is available in this editor so that user does not need to keep on changing the filtering to see the differences. User can turn on and off any time during editing image to compare the differences. Besides auto filtering, user can also filter image manually by adjusting the value with scale bar provided.</p>   
+            </section>
+        </div>
+
+        <!-- Project Information Sidebar -->
+        <div class="project-info">
+            <h3>Project Information</h3>
+            <h4>Category</h4>
+            <div class="tags">
+                <span class="tag">Image Processing</span>
+                <span class="tag">Software Development</span>
+            </div>
+            <h4>Programming Language</h4>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Tkinter</span>
+            </div>
+            <h4>Type of Project</h4>
+            <p>Assignment</p>
+            <h4>Project Date</h4>
+            <p>2022</p>
+            <div class="downloads">
+                <a href="assets/projects/project5/download/Advanced Painting Software.pdf" download target="_blank">Download PDF</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
