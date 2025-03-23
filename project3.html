@@ -1,9 +1,10 @@
+<!-- project3.html: Whale-Watching Application Interface Design (Prototype)-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whale-Watching Application Interface Design (Prototype) - Under Development</title>
+    <title>Whale-Watching Application Interface Design (Prototype)</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,17 +26,100 @@
         </ul>
     </nav>
 
-    <!-- Under Development Message -->
-    <div class="under-development">
-        <h1 class="glitch" data-text="Under Development">Under Development</h1>
-        <p>This project is currently being worked on. Check back later for updates!</p>
+    <!-- Project Container -->
+    <div class="project-container">
+        <h1 class="glitch" data-text="Whale-Watching Application Interface Design (Prototype)">Whale-Watching Application Interface Design (Prototype)</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide"><img src="assets/projects/project3/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project3/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project3/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project3/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project3/slideshow/5.png" alt="Image 5"></div>
+            <div class="slide"><img src="assets/projects/project3/slideshow/6.png" alt="Image 6"></div>
+        </div>
+        <div class="slideshow-controls">
+            <button id="prev">Previous</button>
+            <div class="indicators"></div>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction -->
+            <section id="introduction" class="animate">
+                <h2 class="glitch" data-text="Introduction">Introduction</h2>
+                <p>This mini-project proposed a whale-watching application designed for two types of users: enthusiasts and professionals. However, we focused only on the features available to enthusiast accounts. The goal of this project was to enhance user engagement during whale-watching activities through a digital application. By providing an interactive and satisfying experience, the application also encouraged users to contribute to the conservation of the marine ecosystem.</p>
+            </section>
+
+            <!-- Prototype Walkthrough -->
+            <section id="prototype-walkthrough" class="animate">
+                <h2 class="glitch" data-text="Prototype Walkthrough">Prototype Walkthrough</h2>
+                <video controls width="640" height="360" poster="assets/projects/project3/slideshow/1.png">
+                    <source src="assets/projects/project3/download/Prototype Walkthrough.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Application Features -->
+            <section id="application-features" class="animate">
+                <h2 class="glitch" data-text="Application Features">Application Features</h2>
+
+                <!-- Record Trip -->
+                <h3>Record Trip</h3>
+                <p>This feature allows users to document and keep a record of their marine trips and experiences. Users can record information such as the start and end of their trips, and upload pictures and videos of the activities held. They can choose to share the trip compilation made from this feature on other social media platforms such as WhatsApp, TikTok, or Instagram, enabling them to share their experiences with others.</p>
+
+                <!-- Report Sighting -->
+                <h3>Report Sighting</h3>
+                <p>This feature provides users with a convenient way to document whale and dolphin sightings. Users have the option to upload pictures or videos of the sighting. The application utilizes AI technology to automatically detect the species in the media content. The data collected through this feature enables the distribution mapping of various species.</p>
+
+                <!-- Report Incident -->
+                <h3>Report Incident</h3>
+                <p>This feature allows users to report marine-related incidents. These incidents can include situations such as encountering dead or sick cetaceans, trapped turtles, and large amounts of marine litter. If a user comes across an incident that requires immediate attention or assistance, the application provides a hotline contact number for them to contact the appropriate authorities or organizations. By providing an accessible platform for reporting incidents, the application encourages users to contribute to the monitoring and conservation of marine ecosystems.</p>
+            </section>
+
+             <!-- Implementation -->
+             <section id="implementation" class="animate">
+                <h2 class="glitch" data-text="Implementation">Implementation</h2>
+
+                <ul>
+                    <li><strong>LogIn Interface</strong> - The login interface consists of two features, login and register.</li>
+                    <li><strong>Home Interface</strong> - The Home interface consists of a weather forecast feature to help users predict the weather during their trip.</li>
+                    <li><strong>Reports Interface</strong> - The Reports interface consists of a list of past submitted reports.</li>
+                    <li><strong>Trips Interface</strong> - The Trips interface consists of a list of past documented trips.</li>
+                    <li><strong>Species Interface</strong> - The Species interface consists of a list of dolphin and whale species information.</li>
+                    <li><strong>Profile Interface</strong> - The Profile interface consists of user’s profile details, settings, application tutorial, and logout.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Project Information Sidebar -->
+        <div class="project-info">
+            <h3>Project Information</h3>
+            <h4>Category</h4>
+            <div class="tags">
+                <span class="tag">UI/UX</span>
+                <span class="tag">Interface Programming</span>
+            </div>
+            <h4>Programming Language</h4>
+            <div class="tags">
+                <span class="tag">Figma</span>
+            </div>
+            <h4>Type of Project</h4>
+            <p>Mini Project</p>
+            <h4>Project Date</h4>
+            <p>2023</p>
+            <div class="downloads">
+                <a href="assets/projects/project3/download/Whale-Watching Application Interface Design (Prototype).pdf" download target="_blank">Download PDF</a>
+                <a href="assets/projects/project3/download/Prototype Walkthrough.mp4" download target="_blank">Download Video</a>
+            </div>
+        </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>© Copyright Yap Jia Jun. All Rights Reserved</p>
     </footer>
-
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

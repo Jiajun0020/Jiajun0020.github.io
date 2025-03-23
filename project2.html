@@ -1,9 +1,10 @@
+<!-- project2.html: 3D Desktop Game (The Crusader)-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Desktop Game (The Crusader) - Under Development</title>
+    <title>3D Desktop Game (The Crusader)</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,21 +22,231 @@
             <li><a href="home.html#projects">Projects</a></li>
             <li><a href="home.html#skills">Skills</a></li>
             <li><a href="home.html#achievements">Achievements</a></li>
-            <li><a href="home.html#contact">Contact</a></li> <!-- Updated to #contact -->
+            <li><a href="home.html#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Under Development Message -->
-    <div class="under-development">
-        <h1 class="glitch" data-text="Under Development">Under Development</h1>
-        <p>This project is currently being worked on. Check back later for updates!</p>
+    <!-- Project Container -->
+    <div class="project-container">
+        <h1 class="glitch" data-text="3D Desktop Game (The Crusader)">3D Desktop Game (The Crusader)</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide"><img src="assets/projects/project2/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project2/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project2/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project2/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project2/slideshow/5.png" alt="Image 5"></div>
+        </div>
+        <div class="slideshow-controls">
+            <button id="prev">Previous</button>
+            <div class="indicators"></div>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction -->
+            <section id="introduction" class="animate">
+                <h2 class="glitch" data-text="Introduction">Introduction</h2>
+                <p>This mini project aimed to develop a simple 3D game for desktop with control input by using Unity. Few 3D models were used to build up this game together with character animation. The game’s objective is to fight the enemies and secure the princess and guards who were kidnapped at the final stage. Player can also unlock new weapons to fight the enemies as the game progresses.</p>
+            </section>
+
+            <!-- Duration To Complete Game -->
+            <!-- <section id="duration" class="animate">
+                <h2 class="glitch" data-text="Duration To Complete Game">Duration To Complete Game</h2>
+                <p>30 days (3 January 2023 to 1 February 2023)</p>
+            </section> -->
+
+            <!-- Game Trailer -->
+            <section id="gametrailer" class="animate">
+                <h2 class="glitch" data-text="Game Trailer">Game Trailer</h2>
+                <video controls width="640" height="360" poster="assets/projects/project2/slideshow/1.png">
+                    <source src="assets/projects/project2/Game Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Game Details -->
+            <section id="gamedetail" class="animate">
+                <h2 class="glitch" data-text="Game Details">Game Details</h2>
+
+                <!-- Genre -->
+                <h3>Genre</h3>
+                <p>3rd Person Player Action Role Playing Game (RPG) - Rotating Camera View that follows player</p>
+
+                <!-- Target Audience -->
+                <h3>Target Audience</h3>
+                <p>Young Teenagers (Aged 13+) - Adults, generally players who enjoy Action games</p>
+
+                <!-- Theme/ Setting -->
+                <h3>Theme/ Setting</h3>
+                <p>Medieval, Swords, Fantasy, Olden Times Era</p>
+
+                <!-- Editor Used -->
+                <h3>Editor Used</h3>
+                <p>Unity 2021.3.11f1</p>
+
+                <!-- Background Music Used -->
+                <h3>Background Music Used</h3>
+                <p>Epic Build Up Music - The Storm</p>
+
+                <!-- Other Tech Stack -->
+                <h3>Other Tech Stack</h3>
+                <p>Blender, Unity Asset Store</p>
+
+                <!-- Platform -->
+                <h3>Platform</h3>
+                <p>PC</p>
+
+                <!-- Tested On -->
+                <h3>Tested On</h3>
+                <p>ASUS TUF Gaming F15 GeForce GTX1650, 16GB RAM</p>
+
+                <!-- Levels -->
+                <h3>Levels</h3>
+                <p>2</p>
+
+                <!-- Controls -->
+                <h3>Controls</h3>
+                <p>Mouse, Keyboard</p>
+
+                <!-- Goals -->
+                <h3>Goals</h3>
+                <ul>
+                    <li>
+                        Linear moment (approximately 5-10 minutes combat through enemies) from start to end point of map.
+                    </li>
+                    <li>
+                        Rescue Princess and guards that has been captured.
+                    </li>
+                    <li>
+                        Travelling between maps (2 stages), fighting your way through enemies (in mass) of different difficulties (determined by current stage/ level).
+                    </li>
+                    <li>
+                        Have final boss at the end (win to end).
+                    </li>
+                </ul>
+
+                <!-- In-Game Feature Development Priority -->
+                <h3>In-Game Feature Development Priority</h3>
+                <ul>
+                    <li>
+                        Stage progression.
+                    </li>
+                    <li>
+                        Branching dialogue system.
+                    </li>
+                    <li>
+                        Inventory/ Loot collecting.
+                    </li>
+                    <li>
+                        Real-time combat with mass enemies.
+                    </li>
+                </ul>
+
+                <!-- What we aim for/ Remarkability -->
+                <h3>What we aim for/ Remarkability</h3>
+                <ul>
+                    <li>
+                        Provide simple graphical environments.
+                    </li>
+                    <li>
+                        Ensure players get to achieve adrenaline rush during combat/ battle while enjoying the experience of decent difficulty throughout our game.
+                    </li>
+                    <li>
+                        Survival + Hero (Superior/ Powerful) feeling.
+                    </li>
+                </ul>
+
+                <!-- Game Rules -->
+                <h3>Game Rules</h3>
+                <ol>
+                    <li>
+                        Player needs to eliminate enemies to the save the princess and guards.
+                    </li>
+                    <li>
+                        Checkpoints allow user to save the game progress.
+                    </li>
+                    <li>
+                        Once the player's health drops to 0, player will consider as dead. On dead, player can choose to restart from check point, restart from beginning or return to main menu.
+                    </li>
+                    <li>
+                        Player's maximum health will increase based on player's level.
+                    </li>
+                    <li>
+                        Kill enemies will restore health and gain XP to level up.
+                    </li>
+                    <li>
+                        Player can pause the game.
+                    </li>
+                    <li>
+                        Player can adjust the volume of game from pause menu.
+                    </li>
+                </ol>
+
+                <!-- How-to-Play -->
+                <h3>How-to-Play</h3>
+                <ol>
+                    <li>Click play to start the game.</li>
+                    <li>Click load to read the previous game save file.</li>
+                    <li>Click exit to quit the game.</li>
+                    <li>Use WASD keys to move the character.</li>
+                    <li>Use 1, 2, 3, and 4 keys to select different weapons.</li>
+                    <li>Use the Left Mouse button to attack enemies.</li>
+                    <li>Use the Right Mouse button to rotate the camera view.</li>
+                </ol>
+
+                <!-- Uniqueness -->
+                <h3>Uniqueness</h3>
+                <ul>
+                    <li>Save Progress system to load from last played between levels and play sessions.</li>
+                    <li>Avoid singleton pattern (increase flexibility between levels) - using static variables between portals.</li>
+                    <li>Using coroutines (Unity's IEnumerator) - smooth transfer of data and loading progress between maps/levels.</li>
+                    <li>Only one-way dependency (by using a player or enemy controller linking from one class/namespace to another) - increases flexibility when making edits in any class, prevents major errors due to small changes in a class as it is dependent on one or more classes and vice versa (circular dependencies).</li>
+                    <li>Delegates are also used to avoid costly methods.  
+                        <ul>
+                            <li>Example: Delegates are used in our level-up system where the system does not need to call Update() every frame to check if we have leveled up.</li>
+                            <li>Instead, this delegate (action) will trigger the level-up function when the minimum experience points have been achieved to level up.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- References -->
+                <h3>References</h3>
+                <p>
+                    Mario, God of War, Diablo, Mobile Legends, Metal Slug, Smurf
+                </p>
+            </section>
+
+        </div>
+
+        <!-- Project Information Sidebar -->
+        <div class="project-info">
+            <h3>Project Information</h3>
+            <h4>Category</h4>
+            <div class="tags">
+                <span class="tag">Game Development</span>
+            </div>
+            <h4>Programming Language</h4>
+            <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+            </div>
+            <h4>Type of Project</h4>
+            <p>Mini Project</p>
+            <h4>Project Date</h4>
+            <p>2023</p>
+            <div class="downloads">
+                <a href="assets/projects/project2/download/3D Desktop Game (The Crusader).pdf" download target="_blank">Download PDF</a>
+                <a href="assets/projects/project2/Game Trailer.mp4" download target="_blank">Download Game Trailer</a>
+            </div>
+        </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>© Copyright Yap Jia Jun. All Rights Reserved</p>
     </footer>
-
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

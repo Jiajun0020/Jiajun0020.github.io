@@ -384,7 +384,7 @@ body {
         position: relative;
         width: 100%;
         max-width: 1200px; /* Default max width */
-        /* max-height: 700px; */
+        max-height: 650px;
         height: 600px; /* Set a fixed height to ensure scaling */
         min-height: 600px; /* Ensure it doesn’t collapse */
         margin: 0 auto 20px auto;
@@ -983,4 +983,11 @@ body {
     .under-development p {
         font-size: 18px;
         opacity: 0.8;
+    }
+
+    #gametrailer video {
+        border: 2px solid #00ffcc;
+        border-radius: 8px;
+        display: block; /* Makes the video a block element for centering */
+        margin: 0 auto; /* Centers the video horizontally within the section */
     }

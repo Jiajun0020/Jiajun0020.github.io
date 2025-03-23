@@ -1,9 +1,10 @@
+<!-- project4.html: Advanced Image Enhancement Software -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Desktop Game (The Crusader) - Under Development</title>
+    <title>Advanced Image Enhancement Software</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,10 +26,91 @@
         </ul>
     </nav>
 
-    <!-- Under Development Message -->
-    <div class="under-development">
-        <h1 class="glitch" data-text="Under Development">Under Development</h1>
-        <p>This project is currently being worked on. Check back later for updates!</p>
+    <!-- Project Container -->
+    <div class="project-container">
+        <h1 class="glitch" data-text="Whale-Watching Application Interface Design (Prototype)">Whale-Watching Application Interface Design (Prototype)</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide"><img src="assets/projects/project4/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/5.png" alt="Image 5"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/6.png" alt="Image 6"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/7.png" alt="Image 7"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/8.png" alt="Image 8"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/9.png" alt="Image 9"></div>
+            <div class="slide"><img src="assets/projects/project4/slideshow/10.png" alt="Image 10"></div>
+        </div>
+        <div class="slideshow-controls">
+            <button id="prev">Previous</button>
+            <div class="indicators"></div>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction -->
+            <section id="introduction" class="animate">
+                <h2 class="glitch" data-text="Introduction">Introduction</h2>
+                <p>The presence of haze in the atmosphere degrades the quality of images captured by visible camera sensors. Haze is an atmospheric appearance where dust, smoke, fog, and other dry particles obscure clear scene. The images captured in haze is blended with air light and object scene radiance. The absorption and scattering of natural light due to atmospheric particles present as a result of air pollution, varied weathers and water droplets causing mist, fog, haze in most parts of the world, lowers contrast of the images mostly captured in the outdoors and appear dimmer. Therefore, the demands for improved quality of the input images are increasing with rapid technological advancements over the years. However, removal of haze is still a challenging problem these days. Amongst the methods used for hazy image restoration are Dark Channel Prior (DCP) and Contrast Limited Adaptive Histogram Equalization (CLAHE). Structural Similarity index Method (SSIM) and Peak Signal to Noise Ratio (PSNR) methods are then used to compare the quality of the restored image and original image.</p>
+                <p>In this Mini Project assignment, the main goal is to produce an advanced image enhancement application capable of enhancing the overall quality of hazy images together with other image enhancement methods to further improve input image.</p>                
+            </section>
+
+            <!-- Flow Diagram -->
+            <section id="flowdiagram" class="animate">
+                <h2 class="glitch" data-text="Flow Diagram">Flow Diagram</h2>
+                <div class="image-container">
+                    <img src="assets/projects/project4/Flow Diagram.png" alt="Flow Diagram" class="responsive-image">
+                </div>
+            </section>
+
+            <!-- Dehazing Method-->
+            <section id="dehazing-method" class="animate">
+                <h2 class="glitch" data-text="Dehazing Method">Dehazing Method</h2>
+                <div class="image-container">
+                    <img src="assets/projects/project4/DCP and CLAHE.png" alt="DCP and CLAHE" class="responsive-image">
+                </div>
+                <p>The primary dehazing method employed in this project is based on the Dark Channel Prior (DCP) technique. This approach involves five key steps: airlight estimation, dark channel estimation, transmission estimation, transmission refinement, and scene recovery. Each step contributes to effectively removing haze by modeling and reversing its impact on image quality.</p>
+                <p>Additionally, we utilize Contrast Limited Adaptive Histogram Equalization (CLAHE) as a complementary method to enhance image contrast. CLAHE operates by applying histogram equalization within small, localized regions of the image while imposing a contrast limit to prevent over-amplification of noise, thereby improving visibility and detail.</p>
+            </section>
+
+            <!-- Evaluation Metric-->
+            <section id="evaluation-metric" class="animate">
+                <h2 class="glitch" data-text="Evaluation Metric">Evaluation Metric</h2>
+                <p>This project employs two evaluation metrics: Structural Similarity Index (SSIM) and Peak Signal-to-Noise Ratio (PSNR). SSIM is used to assess the structural similarities between the enhanced image and the original input, focusing on perceived visual quality. In contrast, PSNR measures the ratio between the maximum possible signal power of an image and the power of corrupting noise, providing a quantitative indicator of quality between the original and edited images. PSNR serves as an effective metric to evaluate the suitability of our image enhancement filters, as it highlights the extent to which noise impacts the image's representation relative to its maximum potential quality.</p>
+            </section>
+
+            <!-- Strength & Uniqueness -->
+            <section id="strength-uniqueness" class="animate">
+                <h2 class="glitch" data-text="Strength & Uniqueness">Strength & Uniqueness</h2>
+                <p>The specialty of our application is users are able to redo and undo their actions whenever user has made an error and would like to return to the previous edit. All image details are also provided in the same frame, processed real-time, which improves user experience throughout the editing process. These details include SSIM, PSNR,  image Histogram and other image shape details. Users are also able to retrieve and download processed images for further analysis and comparisons. These images include Dark Channel images, Eroded images, Bit Sliced images, Binary images, split images into their respective Red, Green and Blue Channel images and others. Apart from that, user is also able to manipulate other variables based on their own preferences such as image transformation (offset, scale and rotation), image brightness, contrast, saturation and others to maximize image quality possibilities.</p>
+            </section>
+        </div>
+
+        <!-- Project Information Sidebar -->
+        <div class="project-info">
+            <h3>Project Information</h3>
+            <h4>Category</h4>
+            <div class="tags">
+                <span class="tag">Image Processing</span>
+                <span class="tag">Software Development</span>
+            </div>
+            <h4>Programming Language</h4>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Tkinter</span>
+            </div>
+            <h4>Type of Project</h4>
+            <p>Mini Project</p>
+            <h4>Project Date</h4>
+            <p>2022</p>
+            <div class="downloads">
+                <a href="assets/projects/project4/download/Advanced Image Enhancement Software.pdf" download target="_blank">Download PDF</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
