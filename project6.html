@@ -1,9 +1,10 @@
+<!-- project5.html: 3D Object Visualizer -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Object Visualizer - Under Development</title>
+    <title>3D Object Visualizer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,10 +26,90 @@
         </ul>
     </nav>
 
-    <!-- Under Development Message -->
-    <div class="under-development">
-        <h1 class="glitch" data-text="Under Development">Under Development</h1>
-        <p>This project is currently being worked on. Check back later for updates!</p>
+    <!-- Project Container -->
+    <div class="project-container">
+        <h1 class="glitch" data-text="3D Object Visualizer">3D Object Visualizer</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide"><img src="assets/projects/project6/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project6/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project6/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project6/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project6/slideshow/5.png" alt="Image 5"></div>
+            <div class="slide"><img src="assets/projects/project6/slideshow/6.png" alt="Image 6"></div>
+        </div>
+        <div class="slideshow-controls">
+            <button id="prev">Previous</button>
+            <div class="indicators"></div>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction -->
+            <section id="introduction" class="animate">
+                <h2 class="glitch" data-text="Introduction">Introduction</h2>
+                <p>The Visualization Toolkit (VTK) is a powerful open-source tool for scientific visualization, offering extensive features like 3D rendering, image processing, and advanced modeling. This assignment explores VTK by creating a 3D object visualizer that loads, displays, and manipulates various 3D models, including file formats, geometric primitives, and parametric objects. Integrated with 3D Studio scenes and built with a PyQt5 interface, the visualizer provides model details (e.g., surfaces, points, volume, surface area) and supports color, lighting, and basic transformations via menu or mouse interaction. It also allows saving modified models, showcasing VTK’s ability to turn complex data into insightful visualizations.</p>
+            </section>
+
+            <!-- Flow Diagram -->
+            <section id="flowdiagram" class="animate">
+                <h2 class="glitch" data-text="Flow Diagram">Flow Diagram</h2>
+                <div class="image-container">
+                    <img src="assets/projects/project6/Flow Diagram.png" alt="Flow Diagram" class="responsive-image">
+                </div>
+            </section>
+
+            <!-- System Architecture -->
+            <section id="flowdiagram" class="animate">
+                <h2 class="glitch" data-text="System Architecture">System Architecture</h2>
+                <p>The 3D object visualizer utilizes the VTK library for rendering and the PyQt5 library for its user interface. It can load, render, and interact with 3D objects, geometry, and 3D data using VTK readers. Additionally, the visualizer allows users to manipulate objects interactively using the widget box for transformations. Users can modify the color and lighting of objects and the background environment. Users can extract information about the loaded 3D model, such as volume, total surface area, number of surfaces, and number of points. Finally, users can save and export the modified model.</p>
+            </section>
+
+            <!-- Strength & Uniqueness -->
+            <section id="strength-uniqueness" class="animate">
+                <h2 class="glitch" data-text="Strength & Uniqueness">Strength & Uniqueness</h2>
+                <p>This 3D visualizer has the following strength and uniqueness.</p>
+                <ol>
+                    <li>It can import various types of 3D file formats.</li>
+                    <li>It can import 3D data.</li>
+                    <li>It can load, visualize, and display models such as geometric objects, cell formats, source formats, parametric objects, and models based on implicit functions and iso-surfaces.</li>
+                    <li>Able to import 3D Studio scenes that include multiple actors.</li>
+                    <li>Able to change the background color of the scene.</li>
+                    <li>Able to change the color and lighting of the model.</li>
+                    <li>Able to select and delete models loaded in the scene.</li>
+                    <li>Able to show details of the model.</li>
+                    <li>Able to perform transformations via menu and mouse clicks on the model.</li>
+                    <li>Able to save and write the modified model.</li>
+                    <li>It can show grid and axis.</li>
+                </ol>
+            </section>
+        </div>
+
+        <!-- Project Information Sidebar -->
+        <div class="project-info">
+            <h3>Project Information</h3>
+            <h4>Category</h4>
+            <div class="tags">
+                <span class="tag">Visualization</span>
+                <span class="tag">Software Development</span>
+                <span class="tag">3D Model & Object</span>
+            </div>
+            <h4>Programming Language</h4>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyQt5</span>
+                <span class="tag">VTK</span>
+            </div>
+            <h4>Type of Project</h4>
+            <p>Assignment</p>
+            <h4>Project Date</h4>
+            <p>2024</p>
+            <div class="downloads">
+                <a href="assets/projects/project6/download/3D Object Visualizer.pdf" download target="_blank">Download PDF</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->

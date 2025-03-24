@@ -1,9 +1,10 @@
+<!-- project5.html: ParaView: The Advanced Visualizer -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParaView: The Advanced Visualizer - Under Development</title>
+    <title>ParaView: The Advanced Visualizer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,10 +26,97 @@
         </ul>
     </nav>
 
-    <!-- Under Development Message -->
-    <div class="under-development">
-        <h1 class="glitch" data-text="Under Development">Under Development</h1>
-        <p>This project is currently being worked on. Check back later for updates!</p>
+    <!-- Project Container -->
+    <div class="project-container">
+        <h1 class="glitch" data-text="ParaView: The Advanced Visualizer">ParaView: The Advanced Visualizer</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide"><img src="assets/projects/project8/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/5.png" alt="Image 5"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/6.png" alt="Image 6"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/7.png" alt="Image 7"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/8.png" alt="Image 8"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/9.png" alt="Image 9"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/10.png" alt="Image 10"></div>
+            <div class="slide"><img src="assets/projects/project8/slideshow/11.png" alt="Image 11"></div>
+        </div>
+        <div class="slideshow-controls">
+            <button id="prev">Previous</button>
+            <div class="indicators"></div>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction -->
+            <section id="introduction" class="animate">
+                <h2 class="glitch" data-text="Introduction">Introduction</h2>
+                <p>ParaView is a powerful open-source data visualization and analysis tool widely used in scientific and engineering domains. It enables uers to explore and interpret complex datasets through interactive 3D visualizations. With support for various data formats and scalable parallel processing, ParaView facilitates the examination of diverse data types, ranging from computational simulations to experimental results. Its user-friendly interface and extensive feature set make it a valuable tool for researchers, engineers, and analysts seeking to gain insights from intricate datasets in fields such as fluid dynamics, climate modelling, and medical imaging.</p>
+                <p>     In this mini project, two different types of datasets will be produced rendered scientific visualisation data. The first dataset is related to Hurricane Katrina, while the second is a DICOM dataset. An isosurface visualisation will be created using the combination of main filters like Contour, Clip, StreamTracer and ect. Afterwards, an animation of Hurricane Katrina’s formation and pelvis dataset generation will be created based on the provided datasets.</p>
+            </section>
+
+            <!-- Strength & Uniqueness -->
+            <section id="strength-uniqueness" class="animate">
+                <h2 class="glitch" data-text="Strength & Uniqueness">Strength & Uniqueness</h2>
+                <p>The data visualization by using ParaView has the following strength and uniqueness.</p>
+                <ol>
+                    <li>Shape of hurricane is visualized.</li>
+                    <li>The temperature of hurricane is visualized.</li>
+                    <li>Angular velocity of hurricane is visualized.</li>
+                    <li>Direction of air flow/temperature flow is visualized.</li>
+                    <li>3D volume of DICOM datasets is visualized.</li>
+                    <li>Bone shape of DICOM datasets is visualized.</li>
+                    <li>Multiplanar view of DICOM datasets is visualized.</li>
+                    <li>Slice of DICOM datasets is visualized.</li>
+                </ol>
+            </section>
+
+            <!-- Animation of Hurricane Katrina's Formation -->
+            <section id="hurricane-formation" class="animate">
+                <h2 class="glitch" data-text="Animation of Hurricane Katrina's Formation">Animation of Hurricane Katrina's Formation</h2>
+                <video controls width="640" height="360" poster="assets/projects/project8/slideshow/6.png">
+                    <source src="assets/projects/project8/Animation of Hurricane Katrina's formation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Animation of Pelvis Dataset Generation -->
+            <section id="pelvis-generation" class="animate">
+                <h2 class="glitch" data-text="Animation of Pelvis Dataset Generation">Animation of Pelvis Dataset Generation</h2>
+                <video controls width="640" height="360" poster="assets/projects/project8/slideshow/9.png">
+                    <source src="assets/projects/project8/Animation of Pelvis Dataset Generation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </div>
+
+        <!-- Project Information Sidebar -->
+        <div class="project-info">
+            <h3>Project Information</h3>
+            <h4>Category</h4>
+            <div class="tags">
+                <span class="tag">Visualization</span>
+                <span class="tag">Software Development</span>
+                <span class="tag">3D Model</span>
+            </div>
+            <h4>Programming Language</h4>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyQt5</span>
+                <span class="tag">VTK</span>
+            </div>
+            <h4>Type of Project</h4>
+            <p>Mini Project</p>
+            <h4>Project Date</h4>
+            <p>2024</p>
+            <div class="downloads">
+                <a href="assets/projects/project8/download/Paraview - The Advanced Visualizer.pdf" download target="_blank">Download PDF</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->

@@ -1,9 +1,10 @@
+<!-- project5.html: DICOM: Medical Data Visualizer -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DICOM: Medical Data Visualizer - Under Development</title>
+    <title>DICOM: Medical Data Visualizer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,14 +26,97 @@
         </ul>
     </nav>
 
-    <!-- Under Development Message -->
-    <div class="under-development">
-        <h1 class="glitch" data-text="Under Development">Under Development</h1>
-        <p>This project is currently being worked on. Check back later for updates!</p>
+    <!-- Project Container -->
+    <div class="project-container">
+        <h1 class="glitch" data-text="DICOM: Medical Data Visualizer">DICOM: Medical Data Visualizer</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide"><img src="assets/projects/project7/slideshow/1.png" alt="Image 1"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/2.png" alt="Image 2"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/3.png" alt="Image 3"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/4.png" alt="Image 4"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/5.png" alt="Image 5"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/6.png" alt="Image 6"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/7.png" alt="Image 7"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/8.png" alt="Image 8"></div>
+            <div class="slide"><img src="assets/projects/project7/slideshow/9.png" alt="Image 9"></div>
+        </div>
+        <div class="slideshow-controls">
+            <button id="prev">Previous</button>
+            <div class="indicators"></div>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction -->
+            <section id="introduction" class="animate">
+                <h2 class="glitch" data-text="Introduction">Introduction</h2>
+                <p>Visualization is key in scientific computing, turning complex data into clear visuals. The Visualization Toolkit (VTK), an open-source platform, excels in creating interactive 3D graphics. This assignment uses VTK to build a custom DICOM medical data visualizer, enhancing medical imaging analysis for better diagnosis and treatment. The tool leverages VTK’s advanced rendering and interaction features to help healthcare professionals explore medical data effectively. This report examines the visualizer’s design, implementation, and impact, highlighting VTK’s potential to transform medical data into insightful visualizations.</p>
+            </section>
+
+            <!-- Flow Diagram -->
+            <section id="flowdiagram" class="animate">
+                <h2 class="glitch" data-text="Flow Diagram">Flow Diagram</h2>
+                <div class="image-container">
+                    <img src="assets/projects/project6/Flow Diagram.png" alt="Flow Diagram" class="responsive-image">
+                </div>
+            </section>
+
+            <!-- System Architecture -->
+            <section id="flowdiagram" class="animate">
+                <h2 class="glitch" data-text="System Architecture">System Architecture</h2>
+                <p>The DICOM medical data visualizer, built with VTK for rendering and PyQt5 for its interface, enables users to load, render, and interact with DICOM images and 3D volumes using VTK readers. Users can import DICOM files or folders via a button in the interface, after which patient details—name, ID, birthday, and gender—are extracted and displayed. The visualizer supports viewing individual .dcm files from a dataset with vtkImageViewer2 and allows length measurements by drawing lines on images using mouse events.</p>
+                <p>It also generates a 3D volume from the DICOM dataset using vtkImageData output and enhances edges with gradient magnitude from the reader’s GetOutputPort. Bone and skin extraction from the 3D volume is achieved with vtkFlyingEdges3D, while multiplanar reconstruction lets users view the series in sagittal, coronal, and axial directions. Additional features include preset window width/level adjustments and the ability to save modified image viewers, making this tool versatile for medical data analysis.</p>
+            </section>
+
+            <!-- Strength & Uniqueness -->
+            <section id="strength-uniqueness" class="animate">
+                <h2 class="glitch" data-text="Strength & Uniqueness">Strength & Uniqueness</h2>
+                <p>This DICOM Medical Data Visualizer has the following strength and uniqueness.</p>
+                <ol>
+                    <li>It can import a single .dcm file or a folder for DICOM data sets.</li>
+                    <li>It can display DICOM files in an image viewer and show them slice by slice.</li>
+                    <li>Able to perform edge enhancements on DICOM images.</li>
+                    <li>Able to display a 3D volume of DICOM data.</li>
+                    <li>Show bone of the 3D volume.</li>
+                    <li>Show skin of the 3D volume.</li>
+                    <li>Able to show DICOM images in multiplanar reconstruction views.</li>
+                    <li>Able to draw lines and measure length.</li>
+                    <li>Read DICOM files to retrieve patient information.</li>
+                    <li>Able to save DICOM images and export them in PNG file format.</li>
+                </ol>
+            </section>
+        </div>
+
+        <!-- Project Information Sidebar -->
+        <div class="project-info">
+            <h3>Project Information</h3>
+            <h4>Category</h4>
+            <div class="tags">
+                <span class="tag">Visualization</span>
+                <span class="tag">Software Development</span>
+                <span class="tag">3D Model</span>
+            </div>
+            <h4>Programming Language</h4>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyQt5</span>
+                <span class="tag">VTK</span>
+            </div>
+            <h4>Type of Project</h4>
+            <p>Assignment</p>
+            <h4>Project Date</h4>
+            <p>2024</p>
+            <div class="downloads">
+                <a href="assets/projects/project7/download/DICOM - Medical Data Visualizer.pdf" download target="_blank">Download PDF</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer">s
         <p>© Copyright Yap Jia Jun. All Rights Reserved</p>
     </footer>
 
